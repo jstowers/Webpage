@@ -1,14 +1,33 @@
+// Webpack ver. 2.2
+// webpack.js.org/concepts
+
+// console.log(__dirname) => /Users/jstowers/Documents/Coding/Webpage
+
 module.exports = {
+
+	// entry creates a graph of all app dependencies
 	entry: [
 		'./src/index.js'
 	],
 	// output.filename => specfies the name of the output file
-	// output.path => determines the location on disk the files are written
+	// output.path (absolute) => determines the location on disk the files are written to
+	// __dirname => the directory where the currently executing script resides
 	output: {
 		filename: 'bundle.js',
 		path: __dirname,
 		publicPath: '/'
 	},
+	// configuration regarding modules
+	/*
+	module: {
+	  rules: [
+		{
+				use: [{loader:'babel-loader'}],
+				exclude: /node_modules/
+		}
+	  ]
+	}
+	*/
 	module: {
 	  loaders: [{
 	  	exclude: /node_modules/,
@@ -19,7 +38,6 @@ module.exports = {
 	  }]
 	},
 	// An array of extensions used to resolve modules
-	// 
 	resolve: {
 	  extensions: ['.js', '.jsx']
 	},
