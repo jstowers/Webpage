@@ -1,12 +1,33 @@
 h2 {
 	padding: 20px;
+	bottom-margin: 20px;
 	text-align: center;
 	color: blue;
 }
 
-.btn .btn-primary {
+img {
+	width: 100%;
+	height: auto;
+}
+
+.btn {
+   	text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.btn-primary {
+
+	display: inline-block;
+	width: 100px;
+	font-size: 16px;
+	font-weight: 400;
 	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 	padding: 10px;
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
 	border-radius: 4px;
 }
+

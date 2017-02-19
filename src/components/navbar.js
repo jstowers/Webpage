@@ -5,7 +5,7 @@ class NavBar extends Component {
 	constructor(props) {
 	  super(props);
 
-	  this.tabs = ['About', 'Coding', 'Passions']
+	  this.tabs = ['About', 'Coding', 'Passions'];
 
 	}
 
@@ -22,8 +22,11 @@ class NavBar extends Component {
 
 	render() {
 	  return (
-	  	<div className="navBar">
-	  		{ this.listTabs() }
+	  	<div> 
+	  		<div className="navBar">
+	  		 	{ this.listTabs() }
+	  		</div>
+	  		<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />
 	  	</div>
 	  )
 	}
