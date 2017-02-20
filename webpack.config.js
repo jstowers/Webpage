@@ -1,7 +1,10 @@
 // Webpack ver. 2.2
 // webpack.js.org/concepts
 
+const path = require('path');
+
 // console.log(__dirname) => /Users/jstowers/Documents/Coding/Webpage
+console.log('__dirname', path.join(__dirname + '/out'));
 
 module.exports = {
 
@@ -15,7 +18,7 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		path: __dirname,
-		//publicPath: '/'
+		publicPath: '/'
 	},
 	// configuration regarding modules
 	/*
