@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import NavBar from './components/navbar';
+import AboutMe from './components/aboutme';
+import AboutMeDetail from './components/aboutmedetail';
 
-const App = () => {
-	return (
-		<div>
-			<h2>Joe Stowers</h2>
-			<NavBar />
-		</div>
-	)
+class App extends Component {
+
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			selectedTab: null
+		}
+	}
+
+	render() {
+		return (
+			<div>
+				<h2>Joe Stowers</h2>
+				<AboutMe />
+			</div>
+		);
+	}
 }
 
 ReactDOM.render(<App />, document.querySelector('.container'));
