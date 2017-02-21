@@ -9,20 +9,29 @@ Personal Webpage Using React
 
 2.  Create index.html
 
-3.  Load these libraries locally as dependencies:
+3.  Load these libraries locally (--save) as dependencies using this format:
+
         ````
         $ npm install <library_name> --save
         ````
+        
         a.  react
         b.  react-dom
 
-4.  Load these libraries locally as development dependencies:
+4.  Load these libraries locally (--save) as development dependencies (-dev)
+    using this format:
+
         ````
         $ npm install <library_name> --save-dev
         ````
-        a.  babel
-        b.  webpack
-        c.  webpack-dev-server
+      
+        a.  babel-core 
+        b.  babel-loader 
+        c.  babel-preset-es2015 
+        d.  babel-preset-react
+        e.  babel-preset-stage-1
+        f.  webpack
+        g.  webpack-dev-server
 
 5.  Create package.json
 
