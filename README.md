@@ -36,11 +36,11 @@ Personal Webpage Using React
 
 ***Installing and Running Webpack 2.2.1***
 
-1. In your project directory, install webpack as a development dependency:
+1. If you haven't installed webpack as noted above, then run this command in your project directory:
 
         $ npm install --save-dev webpack
 
-2. Check out the different commands available:
+2. Check out the available webpack commands:
 
         $ node_modules/.bin/webpack --help
 
@@ -60,4 +60,8 @@ Personal Webpage Using React
         $ npm run build
 
 6.  Use an FTP client, like Cyberduck, to copy your files and deploy your
-    website on your webhost's server.
+    website to your webhost's server.
+
+
+***Configuring a webpack.config.js File***
+
