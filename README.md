@@ -9,13 +9,17 @@ Personal Webpage Using React
 
 2.  Create index.html
 
-3.  Load npm libraries as dependencies:
-
+3.  Load these libraries locally as dependencies:
+        ````
+        $ npm install <library_name> --save
+        ````
         a.  react
         b.  react-dom
 
-4.  Load npm libraries as development dependencies:
-    
+4.  Load these libraries locally as development dependencies:
+        ````
+        $ npm install <library_name> --save-dev
+        ````
         a.  babel
         b.  webpack
         c.  webpack-dev-server
