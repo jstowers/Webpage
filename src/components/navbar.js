@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react';
 
 class NavBar extends Component {
@@ -22,6 +23,9 @@ class NavBar extends Component {
 
 	render() {
 	  return (
+	  	<NavBarItem
+	  		onButtonSelect = { props.onButtonSelect }
+	  		key = { }
 	  	<div> 
 	  		<div className="navBar">
 	  		 	{ this.listTabs() }
@@ -36,3 +40,17 @@ export default NavBar
 
 
 // glyphicon glyphicon-briefcase
+
+// 2/19/17 at 11:55 pm
+/*
+	render() {
+		  return (
+		  	<div> 
+		  		<div className="navBar">
+		  		 	{ this.listTabs() }
+		  		</div>
+		  		<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />
+		  	</div>
+		  )
+	}
+*/

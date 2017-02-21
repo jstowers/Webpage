@@ -14,9 +14,7 @@ class AboutMe extends Component {
 
 	onClick() {
 		event.preventDefault;
-		console.log('The button was clicked');
-		this.setState({showMe: true});
-		console.log('state', this.state);
+		this.setState({showMe: !this.state.showMe});
 	}
 
 	/*
@@ -37,15 +35,29 @@ class AboutMe extends Component {
 	*/
 
 	render() {
-		
-		return (
-			<div>
-				<button
-					className= 'btn btn-primary' 
-					onClick= { (event) => this.onClick() }> About
-				</button>
-			</div>
-		)
+
+		if(!this.state.showMe){
+			return (
+				<div>
+					<button
+						className= 'btn btn-primary' 
+						onClick= { (event) => this.onClick() }> About
+					</button>
+				</div>
+			)
+		}
+
+		else {
+			return (
+				<div>
+					<button
+						className= 'btn btn-primary' 
+						onClick= { (event) => this.onClick() }> About
+					</button>
+					<AboutMeDetail />
+				</div>
+			)
+		}
 	}
 }
 
