@@ -4,15 +4,18 @@ Personal Webpage Using React
 ###Saturday, February 18, 2017###
 
 ***Basic Outline***
+
 1.  Create index.js
 
 2.  Create index.html
 
 3.  Load npm libraries as dependencies:
+
         a.  react
         b.  react-dom
 
-4.  Load npm libraries as development dependencies:    
+4.  Load npm libraries as development dependencies:
+    
         a.  babel
         b.  webpack
         c.  webpack-dev-server
@@ -24,7 +27,7 @@ Personal Webpage Using React
 
 ***Installing and Running Webpack 2.2.1***
 
-1. In your project directory, install webpack:
+1. In your project directory, install webpack as a development dependency:
 
         $ npm install --save-dev webpack
 
