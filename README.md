@@ -11,9 +11,7 @@ Personal Webpage Using React
 
 3.  Load these libraries locally (--save) as dependencies using this format:
 
-        ````
         $ npm install <library_name> --save
-        ````
         
         a.  react
         b.  react-dom
@@ -21,10 +19,8 @@ Personal Webpage Using React
 4.  Load these libraries locally (--save) as development dependencies (-dev)
     using this format:
 
-        ````
         $ npm install <library_name> --save-dev
-        ````
-      
+              
         a.  babel-core 
         b.  babel-loader 
         c.  babel-preset-es2015 
