@@ -18,9 +18,8 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Joe Stowers</h2>
-				<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />
-				<AboutMe />
+				<h1>Joe Stowers</h1>
+				<NavBar />
 			</div>
 		);
 	}

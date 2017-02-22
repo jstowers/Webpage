@@ -1,4 +1,4 @@
-h2 {
+h1 {
 	padding: 20px;
 	bottom-margin: 20px;
 	text-align: center;
@@ -6,8 +6,9 @@ h2 {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
+	border-radius: 4px
 }
 
 .btn {

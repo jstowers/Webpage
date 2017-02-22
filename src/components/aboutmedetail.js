@@ -6,18 +6,19 @@ class AboutMeDetail extends Component {
 		super(props);
 
 		this.items = {
-			name: 'Joe Stowers',
-			age: 38,
-			location: 'Austin',
+			punchline: 'Positively driven, Creatively diverse',
+			location: 'Austin, San Francisco',
 			occupation: 'Software Engineer'
 		}
 	}
 
 	render() {
+
 		return (
-			<div>
-				<li> {this.items.name} </li>
-				<li> {this.items.age} </li>
+			<div className = "col-sm-4">
+				<h3> {this.items.punchline} </h3>
+				<h4> {this.items.occupation} </h4>
+				<h5> {this.items.location} </h5>
 			</div>
 		)
 	}

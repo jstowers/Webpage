@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
+import NavBar from './navbar';
 import AboutMeDetail from './aboutmedetail';
+
 
 class AboutMe extends Component {
 	
@@ -14,25 +16,9 @@ class AboutMe extends Component {
 
 	onClick() {
 		event.preventDefault;
+		console.log('event =', event)
 		this.setState({showMe: !this.state.showMe});
 	}
-
-	/*
-	onClick(event) {
-		event.preventDefault;
-		//event.currentTarget.style.backgroundColor = '#ccc';
-		console.log('event', event);
-		console.log('this.state before = ', this.state);
-		this.setState({showMe: true});
-		console.log('this.state after = ', this.state);
-
-
-		return (
-
-			<h2>HELLO</h2>
-		)
-	}
-	*/
 
 	render() {
 
@@ -49,7 +35,7 @@ class AboutMe extends Component {
 
 		else {
 			return (
-				<div>
+				<div className="col-sm-4">
 					<button
 						className= 'btn btn-primary' 
 						onClick= { (event) => this.onClick() }> About
