@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import NavBar from './components/navbar';
 import AboutMe from './components/aboutme';
-import AboutMeDetail from './components/aboutmedetail';
+import OpenPage from './components/openpage';
 
 class App extends Component {
 
@@ -20,7 +20,6 @@ class App extends Component {
 			<div>
 				<h1>Joe Stowers</h1>
 				<NavBar />
-				
 			</div>
 		);
 	}

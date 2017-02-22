@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import AboutMeDetail from './aboutmedetail';
 import CodingDetail from './codingdetail';
+import PassionsDetail from './passionsdetail';
 
 class NavBar extends Component {
 
@@ -34,7 +35,7 @@ class NavBar extends Component {
 	}
 
 
-	// listTabs() function displays the buttons
+	// Display the nav bar buttons
 	listTabs() {
 
 	  return this.tabs.map((tab, index) => {
@@ -58,6 +59,8 @@ class NavBar extends Component {
 			return <AboutMeDetail />
 		} else if (component && tab === 'Coding') {
 			return <CodingDetail />
+		} else if (component && tab == 'Passions'){
+			return <PassionsDetail />
 		}
 		else return null;
 	}
@@ -69,8 +72,17 @@ class NavBar extends Component {
 	  if(!this.state.showComponent){
 	  	return (
 	  		<div>
-	  			{this.listTabs()}
-	  		</div>
+		  		<div>
+		  			{this.listTabs()}
+		  		</div>
+		  		<div className = "row">
+					<div className = "col-sm-4">
+					</div>
+					<div className = "col-sm-8 main-photo">
+						<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />
+					</div>
+				</div>
+			</div>
 	  	);
 	  }
 

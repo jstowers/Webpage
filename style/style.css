@@ -3,12 +3,31 @@ h1 {
 	bottom-margin: 20px;
 	text-align: center;
 	color: #006dcc;
+	border-bottom: 4px solid black;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 4px;
+}
+
+.video-link {
+	max-width: 100%;
+	height: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.coding-link {
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+.main-photo {
+	margin-top: 20px;
 }
 
 .btn {

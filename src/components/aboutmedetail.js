@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
+import NavBar from './navbar';
+
 class AboutMeDetail extends Component {
 	
 	constructor(props) {
 		super(props);
 
 		this.items = {
-			punchline: 'Positively driven, Creatively diverse',
+			punchline: 'Positively driven, Creatively built',
 			location: 'Austin, San Francisco',
 			occupation: 'Software Engineer'
 		}
@@ -20,7 +22,7 @@ class AboutMeDetail extends Component {
 					<h4> {this.items.occupation} </h4>
 					<h5> {this.items.location} </h5>
 				</div>
-				<div className = "col-sm-8">
+				<div className = "col-sm-8 main-photo">
 					<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />
 				</div>
 			</div>
