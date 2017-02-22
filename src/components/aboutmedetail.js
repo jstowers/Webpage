@@ -17,10 +17,15 @@ class AboutMeDetail extends Component {
 	render() {
 		return (
 			<div className = "row">
-				<div className = "col-sm-4">
+				<div className = "col-sm-4 about-me">
 					<h3> {this.items.punchline} </h3>
 					<h4> {this.items.occupation} </h4>
 					<h5> {this.items.location} </h5>
+					<a 	href="https://www.linkedin.com/in/joestowers/"
+						target="_blank">
+						<img className= "video-link"
+							src= "/img/LinkedIn100px.png" alt="LinkedIn"/>
+					</a>
 				</div>
 				<div className = "col-sm-8 main-photo">
 					<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />

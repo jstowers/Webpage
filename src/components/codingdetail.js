@@ -12,7 +12,7 @@ const CodingDetail = (props) => {
 						className= "coding-link center-block" 
 						src= "/img/GitHub120px.png" alt= "Github"/>
 				</a>
-				<a href="https://sounddeck.herokuapp.com/">
+				<a href="https://sounddeck.herokuapp.com/" target="_blank">
 					<img
 						className= "coding-link center-block" 
 						src= "/img/SoundDeck120px.png"/>
