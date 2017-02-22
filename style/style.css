@@ -2,13 +2,13 @@ h1 {
 	padding: 20px;
 	bottom-margin: 20px;
 	text-align: center;
-	color: blue;
+	color: #006dcc;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 4px
+	border-radius: 4px;
 }
 
 .btn {

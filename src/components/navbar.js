@@ -3,6 +3,7 @@
 
 import React, { Component } from 'react';
 import AboutMeDetail from './aboutmedetail';
+import CodingDetail from './codingdetail';
 
 class NavBar extends Component {
 
@@ -18,14 +19,22 @@ class NavBar extends Component {
 
 	}
 
+	// onClick() function toggles state for tab values and whether to show component
+	// details for each tab in NavBar
 	onClick(tab) {
 		event.preventDefault;
 		console.log('event =', event);
 		console.log('tab = ', tab);
-		this.setState({showComponent: !this.state.showComponent});
+		if (tab !== this.state.tabValue && !this.state.showComponent){
+			this.setState({showComponent: !this.state.showComponent});
+		} else {
+			this.setState({showComponent: true});
+		}
 		this.setState({tabValue:tab});
 	}
 
+
+	// listTabs() function displays the buttons
 	listTabs() {
 
 	  return this.tabs.map((tab, index) => {
@@ -41,22 +50,38 @@ class NavBar extends Component {
 	  });
 	}
 
-	test() {
-		if (this.state.showComponent && this.state.tabValue === 'About') {
+	showTabContent() {
+		let tab = this.state.tabValue;
+		let component = this.state.showComponent;
+
+		if (component && tab === 'About') {
 			return <AboutMeDetail />
+		} else if (component && tab === 'Coding') {
+			return <CodingDetail />
 		}
+		else return null;
 	}
 
 	render() {
 
 	  console.log('state =', this.state);
 
-	  return (
-	  	<div>
-	  		{this.listTabs()}
-	  		{this.test()}
-	  	</div>
-	  );
+	  if(!this.state.showComponent){
+	  	return (
+	  		<div>
+	  			{this.listTabs()}
+	  		</div>
+	  	);
+	  }
+
+	  else if (this.state.tabValue) {
+	  	return(
+	  		<div>
+		  		{this.listTabs()}
+		  		{this.showTabContent()}
+	  		</div>
+  		);
+	  }
 	}
 }
 
@@ -85,5 +110,8 @@ export default NavBar
 		  		<img src="/img/JoeProfilePhoto.jpg" alt="JoeStowers" />
 		  	</div>
 		</div>
+
+3.	Need to see about passing the Tab props (About, Coding, Passions) into
+	the proper component.
 */
 

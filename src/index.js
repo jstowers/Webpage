@@ -20,6 +20,7 @@ class App extends Component {
 			<div>
 				<h1>Joe Stowers</h1>
 				<NavBar />
+				
 			</div>
 		);
 	}
