@@ -9,8 +9,9 @@ class AboutMeDetail extends Component {
 
 		this.items = {
 			punchline: 'Positively driven, Creatively built',
-			location: 'Austin, San Francisco',
-			occupation: 'Software Engineer'
+			occupation: 'Software Engineer',
+			goal: 'Seeking a job that provides.  Stir in a challenge, sprinkle with beauty, and taste the benefit.'
+			
 		}
 	}
 
@@ -20,7 +21,7 @@ class AboutMeDetail extends Component {
 				<div className = "col-sm-4 about-me">
 					<h3> {this.items.punchline} </h3>
 					<h4> {this.items.occupation} </h4>
-					<h5> {this.items.location} </h5>
+					<h5> {this.items.goal} </h5>
 					<a 	href="https://www.linkedin.com/in/joestowers/"
 						target="_blank">
 						<img className= "video-link"
