@@ -10,18 +10,27 @@ class AboutMeDetail extends Component {
 		this.items = {
 			punchline: 'Positively driven, Creatively built',
 			occupation: 'Software Engineer',
-			goal: 'Seeking a job that provides.  Stir in a challenge, sprinkle with beauty, and taste the benefit.'
-			
+			technologies: 'JavaScript, React, Angular, Node, MongoDB',
+			goal: 'Seeking a full-stack web developer job that provides an outlet for my creativity and problem-solving skills.  ' + 
+			'Stir in a challenge, sprinkle with beauty, and savor the goodness.'
 		}
 	}
+
+	// <h4> like 
 
 	render() {
 		return (
 			<div className = "row">
 				<div className = "col-sm-4 about-me">
-					<h3> {this.items.punchline} </h3>
+					<h2> {this.items.punchline} </h2>
 					<h4> {this.items.occupation} </h4>
-					<h5> {this.items.goal} </h5>
+					<div className = "about-me-tech"> 
+						{this.items.technologies} 
+					</div>
+					<br></br>
+					<div className = "about-me-goal"> 
+						{this.items.goal} 
+					</div>
 					<a 	href="https://www.linkedin.com/in/joestowers/"
 						target="_blank">
 						<img className= "video-link"

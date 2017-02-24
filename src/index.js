@@ -15,7 +15,14 @@ class App extends Component {
 		}
 	}
 
+	forceUpdate() {
+		console.log('In forceUpdate')
+	}
+
 	render() {
+
+		this.forceUpdate();
+
 		return (
 			<div>
 				<h1>Joe Stowers</h1>
