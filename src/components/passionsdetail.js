@@ -23,9 +23,9 @@ const PassionsDetail = (props) => {
 		}
 	];
 
-	const videoItems = musicVideos.map(video => {
+	const videoItems = musicVideos.map((video,index) => {
 		return (
-			<a href= {video.url} target="_blank">
+			<a key={index} href= {video.url} target="_blank">
 				<img 
 					className = 'video-link'
 					src= {video.img}
