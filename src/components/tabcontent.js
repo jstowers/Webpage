@@ -18,7 +18,7 @@ class TabContent extends Component {
 			return <AboutDetail />
 		} else if (tab === 'Coding') {
 			return <CodingDetail />
-		} else if (tab == 'Passions'){
+		} else if (tab === 'Passions'){
 			return <PassionsDetail />
 		}
 	}
